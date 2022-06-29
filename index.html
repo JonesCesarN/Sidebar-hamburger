@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sidebar</title>
+  </head>
+
+  <body>
+    <aside class="sidebar side-hover" data-js="sideHover">
+      <div class="sidebar__header hover-center" data-js="hoverCenter">
+        <img src="img/logo.svg" class="hover" data-js="hover" />
+        <img src="img/menu.svg" data-js="menu" class="active" />
+      </div>
+      <ul class="sidebar__nav">
+        <li class="active">
+          <img src="img/search.svg" />
+          <p class="hover" data-js="hover">Buscar</p>
+        </li>
+        <li>
+          <img src="img/grid.svg" />
+          <p class="hover" data-js="hover">Dashboard</p>
+        </li>
+        <li>
+          <img src="img/pet.svg" />
+          <p class="hover" data-js="hover">Pets</p>
+        </li>
+        <li>
+          <img src="img/user.svg" />
+          <p class="hover" data-js="hover">Clientes</p>
+        </li>
+        <li>
+          <img src="img/vet.svg" />
+          <p class="hover" data-js="hover">Vets</p>
+        </li>
+        <li>
+          <img src="img/settings.svg" />
+          <p class="hover" data-js="hover">Ajustes</p>
+        </li>
+      </ul>
+      <div class="sidebar__footer hover-center" data-js="hoverCenter">
+        <div class="footer__user hover" data-js="hover">
+          <img src="img/avatar.png" alt="profile" />
+          <div>
+            <span>Elanor Pena</span>
+            <p>Veterinária</p>
+          </div>
+        </div>
+        <img src="img/log-out.svg" />
+      </div>
+    </aside>
+    <main class="main">Dashboard</main>
+    <script src="script.js"></script>
+  </body>
+</html>
