@@ -14,7 +14,7 @@ body {
   background-color: var(--body-bg-color);
   color: var(--text-color);
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
 img {
   display: block;
@@ -33,6 +33,10 @@ img {
   width: 250px;
   background-color: var(--green);
   animation: sidebar-open 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .sidebar__header {
@@ -40,6 +44,14 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 24px;
+}
+
+.sidebar__header img[src="img/logo.svg"] {
+  cursor: default;
+}
+
+img[src*="svg"] {
+  cursor: pointer;
 }
 
 .sidebar__nav {
@@ -54,6 +66,12 @@ img {
   align-items: center;
   gap: 13px;
   padding: 13px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.sidebar__nav li:hover {
+  background-color: var(--light-green);
 }
 
 .sidebar__nav li * {
@@ -66,14 +84,10 @@ img {
 
 .sidebar__nav li.active {
   background-color: var(--light-green);
-  border-radius: 15px;
 }
 
 .sidebar__footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  left: 0;
   padding: 8px 16px;
   display: flex;
   justify-content: space-between;
